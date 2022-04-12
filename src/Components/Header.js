@@ -4,7 +4,7 @@ import CustomLink from './CustomLink';
 
 const Header = () => {
     return (
-        <div className='d-flex justify-content-center'>
+        <div className='d-flex justify-content-center mt-3 mb-5'>
             <CustomLink className='link' to='/'>HOME</CustomLink>
             <CustomLink className='link' to='/reviews'>REVIEWS</CustomLink>
             <CustomLink className='link' to='/dashboard'>DASHBOARD</CustomLink>
