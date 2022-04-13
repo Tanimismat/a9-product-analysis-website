@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ThreeReviews from './ThreeReviews';
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
             </div>
             <div>
                 <h5 className='mt-5'>Customer Reviews (3)</h5>
+                <ThreeReviews></ThreeReviews>
 
                 <Link className='seeAll-btn' to='/reviews'>See All Reviews</Link>
 
