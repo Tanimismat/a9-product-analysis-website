@@ -30,3 +30,8 @@
 .button:hover {
   background-color: #c0d88e;
 }
+
+.all-reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

@@ -1,15 +1,24 @@
 import React from 'react';
 import useReviews from '../hooks/useReviews';
+import SingleReview from './SingleReview';
 
 const Reviews = () => {
 
-    const [reviews, setReviews] = useReviews();
+    const [reviews] = useReviews();
+    // console.log(reviews)
+    const { id } = reviews
 
     return (
-        <div>
-            <h2>Reviews page: {reviews.length}</h2>
+        <div className='all-reviews gap-4 mx-5'>
+            {
+                reviews.map(review => <SingleReview
+                    key={id}
+                    review={review}
+                ></SingleReview>)
+            }
         </div>
     );
+
 };
 
 export default Reviews;
