@@ -36,6 +36,11 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+.three-reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .seeAll-btn {
   text-decoration: none;
   border-radius: 5px;
@@ -43,6 +48,12 @@
   color: #344d02;
   padding: 5px 20px;
   margin: 10px auto;
+}
+
+.seeAll-button {
+  border: none;
+  margin: 30px;
+  background: none;
 }
 
 .seeAll-btn:hover {

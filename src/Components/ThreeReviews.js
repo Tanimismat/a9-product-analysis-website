@@ -7,7 +7,7 @@ const ThreeReviews = () => {
     // console.log(reviews)
     const { id } = reviews
     return (
-        <div className='all-reviews gap-4 mx-5'>
+        <div className='three-reviews gap-4 mx-5'>
             {
                 reviews.map(review => <SingleReview
                     key={id}
