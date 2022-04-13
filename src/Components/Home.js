@@ -1,6 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Home = () => {
+
+
     return (
         <div>
             <div className='d-flex align-items-center justify-content-center'>
@@ -14,7 +18,10 @@ const Home = () => {
                 </div>
             </div>
             <div>
-                <h2 className='mt-5'>Customer Reviews</h2>
+                <h5 className='mt-5'>Customer Reviews (3)</h5>
+
+                <Link className='seeAll-btn' to='/reviews'>See All Reviews</Link>
+
             </div>
         </div>
     );

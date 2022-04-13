@@ -35,3 +35,17 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+
+.seeAll-btn {
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #c9dda1dd;
+  color: #344d02;
+  padding: 5px 20px;
+  margin: 10px auto;
+}
+
+.seeAll-btn:hover {
+  background-color: #c0d88e;
+  color: #344d02;
+}
