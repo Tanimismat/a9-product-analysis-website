@@ -9,14 +9,18 @@ const Reviews = () => {
     const { id } = reviews
 
     return (
-        <div className='all-reviews gap-4 mx-5'>
-            {
-                reviews.map(review => <SingleReview
-                    key={id}
-                    review={review}
-                ></SingleReview>)
-            }
+        <div>
+            <h3 className='mb-4'>What our Customers say!</h3>
+            <div className='all-reviews gap-4 mx-5'>
+                {
+                    reviews.map(review => <SingleReview
+                        key={id}
+                        review={review}
+                    ></SingleReview>)
+                }
+            </div>
         </div>
+
     );
 
 };

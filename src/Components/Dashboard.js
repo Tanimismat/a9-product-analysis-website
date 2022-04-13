@@ -1,5 +1,5 @@
 import React from 'react';
-import { LineChart, Line, XAxis, YAxis, Tooltip, PieChart, Pie, CartesianGrid } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, Tooltip, PieChart, Pie, CartesianGrid, Legend } from 'recharts';
 
 const Dashboard = () => {
     const data = [
@@ -42,15 +42,19 @@ const Dashboard = () => {
     ]
     return (
         <div>
+            <h5>Month wise sell</h5>
             <LineChart width={500} height={400} data={data}>
                 <Line dataKey={'sell'} stroke="#77ae08"></Line>
                 <XAxis dataKey="month" />
                 <YAxis />
+                <Legend />
                 <Tooltip />
                 <CartesianGrid strokeDasharray="3 3" />
             </LineChart>
+            <h5 className='mt-5'>Investment VS Revenue</h5>
             <PieChart width={400} height={300}>
-                <Pie data={data} dataKey={'revenue'} cx='50%' cy='50%' outerRadius={60} fill='#82ca9d' label></Pie>
+                <Pie data={data} dataKey={'revenue'} cx='50%' cy='50%' outerRadius={60} fill='#82ca9d'></Pie>
+                <Pie data={data} dataKey={'investment'} nameKey="name" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#8884d8" label />
                 <Tooltip />
             </PieChart>
         </div>
